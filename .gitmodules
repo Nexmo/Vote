@@ -1,0 +1,6 @@
+[submodule "gist-1577285"]
+	path = gist-1577285
+	url = git@gist.github.com:1577285.git
+[submodule "vendor/nexmo"]
+	path = vendor/nexmo
+	url = git@github.com:Nexmo/nexmo-php-prawnsalad.git
