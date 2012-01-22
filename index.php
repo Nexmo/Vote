@@ -9,7 +9,7 @@ require_once 'lib/cloudmine/CloudMine.php';
 $cloudmine = new CloudMine($config['cloudmine']['user'], $config['cloudmine']['pass']);
 
 //get data
-$data = $cloudmine->get('a2sw'); //yeah, pulling back all the data here
+$data = $cloudmine->get('a2sw');
 
 //render 'n stuff
 ?>
@@ -17,7 +17,6 @@ $data = $cloudmine->get('a2sw'); //yeah, pulling back all the data here
     <head>
         <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
         <script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="lib/jquery.jqplot.min.js"></script>
         <script src="lib/highcharts/highcharts.js" type="text/javascript"></script>
         <script type="text/javascript">
             var app = {};
@@ -71,7 +70,7 @@ $data = $cloudmine->get('a2sw'); //yeah, pulling back all the data here
     <div>
         <div id="container" style="height:85%; margin: 10px;"></div>
     </div>
-    <div sub-key="sub-1d4f0473-07b4-11e0-8edf-7baea4fe3b8b" ssl="off" origin="pubsub.pubnub.com" id="pubnub"></div>
+    <div sub-key="<?php echo $config['pubnub']['sub']?>" ssl="off" origin="pubsub.pubnub.com" id="pubnub"></div>
 
     <div style='padding: 20px;'>
         <span style='float: right;'>
@@ -84,8 +83,6 @@ $data = $cloudmine->get('a2sw'); //yeah, pulling back all the data here
 
     <script src="http://cdn.pubnub.com/pubnub-3.1.min.js"></script>
     <script>(function(){
-    
-        // LISTEN FOR MESSAGES
         PUBNUB.subscribe({
             channel  : "a2sw",      // CONNECT TO THIS CHANNEL.
             callback : function(message) { // RECEIVED A MESSAGE.
