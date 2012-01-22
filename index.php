@@ -78,7 +78,7 @@ $data = $cloudmine->get('a2sw');
             <img src="http://pubnub.s3.amazonaws.com/2011/powered-by-pubnub/powered-by-pubnub-200.png" height='50px'/>
             <img src="https://cloudmine.me/assets/cloudmine_logo-c2f0670f4b46084cd993e61366a7ac63.png" height='50px'/>
         </span>
-        <h1 style='color: #FFFFFF;'>Text Your Vote To: 1-408-840-2879</h1>
+        <h1 style='color: #FFFFFF;'>Text Your Vote To: 1-818-937-4410</h1>
     </div>    
 
     <script src="http://cdn.pubnub.com/pubnub-3.1.min.js"></script>
