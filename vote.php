@@ -28,6 +28,9 @@ if(preg_match_all('/#(\w*)/', $nexmo->text, $votes)){
     exit; //no vote detected, nothing to do
 }
 
+//we're very insensitive to case
+$vote = strtolower($vote);
+
 //setup cloudmine
 require_once 'lib/cloudmine/CloudMine.php';
 $cloudmine = new CloudMine($config['cloudmine']['user'], 
