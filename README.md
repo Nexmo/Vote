@@ -22,7 +22,7 @@ Install
 Requirements
 ------------
 
-* Zend Framework (will make a submodule soon)
+* Zend Framework
 * Nexmo Account & Incomming Number
 * CloudMine Account
 * PubNub Account
