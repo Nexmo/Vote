@@ -23,7 +23,7 @@ Requirements
 ------------
 
 * Zend Framework
-* Nexmo Account & Incomming Number
+* Nexmo Account & Incoming Number
 * CloudMine Account
 * PubNub Account
 
@@ -31,6 +31,6 @@ Notes
 -----
 
 This was a quick and simple example, written for [Ann Arbor Startup Weekend][4].
-Certianly plenty of room for imporvment/features, pull requests welcome.
+Certainly plenty of room for improvement and features. Pull requests welcome.
 
 [4]: http://annarbor.startupweekend.org/
